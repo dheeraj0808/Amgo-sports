@@ -8,28 +8,129 @@
  * ------------------------------------------------------------
  */
 {
-  "name": "t:sections.footer.name",
   "type": "footer",
+  "name": "Footer",
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "custom_text_CtraB7": {
+          "type": "custom_text",
+          "settings": {
+            "title": "Amgo Sports",
+            "image_max": "200px",
+            "description": "<p>AMGO Sports was born just over a year ago, driven by passion rather than profit.</p><p></p><p><a href=\"#\" title=\"#\"><strong>999999999</strong></a></p><p></p><p>custumerservice@amgosports.com</p>",
+            "width": "25%",
+            "order_first": false,
+            "open_default": false
+          }
+        },
+        "7ebc2f78-975b-4a81-b874-103c3355a866": {
+          "type": "menu",
+          "settings": {
+            "menu": "collection-copy",
+            "title": "",
+            "width": "25%",
+            "order_first": false,
+            "open_default": false
+          }
+        },
+        "49e72833-c68f-4a7b-ab64-3ef0cae99bcb": {
+          "type": "menu",
+          "settings": {
+            "menu": "collection",
+            "title": "Useful Links",
+            "width": "25%",
+            "order_first": false,
+            "open_default": false
+          }
+        },
+        "menu_d3LJp9": {
+          "type": "menu",
+          "settings": {
+            "menu": "company",
+            "title": "Company",
+            "width": "25%",
+            "order_first": false,
+            "open_default": false
+          }
+        }
+      },
+      "block_order": [
+        "custom_text_CtraB7",
+        "7ebc2f78-975b-4a81-b874-103c3355a866",
+        "49e72833-c68f-4a7b-ab64-3ef0cae99bcb",
+        "menu_d3LJp9"
+      ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "color_scheme": "badge-sale",
+        "design": "footer-1",
+        "container": "container-fluid",
+        "bordered": false,
+        "copyright": "© MINIMOG 2023",
+        "show_country_selector": false,
+        "show_currency_selector": false,
+        "show_language_selector": false,
+        "show_social_links": false,
         "enable_follow_on_shop": true,
-        "show_social": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
-        "show_policy": true,
-        "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "show_payment_icons": true,
+        "payment_icons_width": 300,
+        "footer_bottom_color_scheme": ""
+      }
+    },
+    "mobile-sticky-bar": {
+      "type": "mobile-sticky-bar",
+      "settings": {
+        "show_mobile_sticky": true,
+        "show_home_icon": true,
+        "show_collection_icon": true,
+        "show_cart_icon": true,
+        "show_search_icon": true,
+        "show_account_icon": false,
+        "show_wishlist_icon": false
+      }
+    },
+    "age-verifier-popup": {
+      "type": "age-verifier-popup",
+      "blocks": {
+        "block-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Confirm your age"
+          }
+        },
+        "block-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Are you 18 years old or older?</p>"
+          }
+        },
+        "block-3": {
+          "type": "buttons",
+          "settings": {
+            "decline_button": "No, I'm not",
+            "approve_button": "Yes, I am"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "settings": {
+        "design_mode": false,
+        "enable": false,
+        "bg_blur": true,
+        "decline_heading": "Come back when you're older",
+        "decline_content": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.</p>",
+        "return_button": "Oops, I entered incorrectly"
       }
     }
   },
   "order": [
-    "footer"
+    "footer",
+    "mobile-sticky-bar",
+    "age-verifier-popup"
   ]
 }

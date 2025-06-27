@@ -1,0 +1,61 @@
+{% schema %}
+{
+  "name": "Scrolling Marquee Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "marquee_text",
+      "label": "Marquee Text",
+      "default": "Confused about a product? Contact us now. | 0411 123 262"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#D4FF35"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scrolling Text Bar"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: scroll-marquee 20s linear infinite;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
+
+<div class="marquee-wrapper" style="background-color: {{ section.settings.background_color }};">
+  <p class="marquee-text" style="color: {{ section.settings.text_color }};">
+    {{ section.settings.marquee_text }} {{ section.settings.marquee_text }} {{ section.settings.marquee_text }}
+  </p>
+</div>

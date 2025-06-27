@@ -8,18 +8,18 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "main": {
-      "type": "page",
-      "settings": {}
+    "sections": {
+      "main": {
+        "type": "page",
+        "settings": {}
+      },
+      "custom2": {
+        "type": "custom2",
+        "settings": {}
+      }
     },
-    "custom": {
-      "type": "custom-section",
-      "settings": {}
-    }
-  },
-  "order": [
-    "main",
-    "custom"
-  ]
+    "order": [
+      "main",
+      "custom2"
+    ]
 }

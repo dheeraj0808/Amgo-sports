@@ -8,18 +8,19 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "main": {
-      "type": "page",
-      "settings": {}
+    "sections": {
+      "main": {
+        "type": "page",
+        "settings": {}
+      },
+      "custom": {
+        "type": "custom-section",
+        "settings": {}
+      }
     },
-    "custom": {
-      "type": "custom-section",
-      "settings": {}
-    }
-  },
-  "order": [
-    "main",
-    "custom"
-  ]
-}
+    "order": [
+      "main",
+      "custom"
+    ]
+  }
+  

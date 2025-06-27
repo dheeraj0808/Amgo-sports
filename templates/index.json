@@ -256,6 +256,14 @@
         "animations": "inherit"
       }
     },
+    "custom2_y9xjHj": {
+      "type": "custom2",
+      "name": "Custom 2",
+      "settings": {
+        "heading": "Welcome to Custom 2 Section",
+        "description": "Yeh custom2 section ka description hai."
+      }
+    },
     "162251092958fcda7c": {
       "type": "product-tabs",
       "blocks": {
@@ -717,6 +725,7 @@
     "1621243260e1af0c20",
     "scrolling_promotion_NnJkkY",
     "collection_list_cg7ewk",
+    "custom2_y9xjHj",
     "162251092958fcda7c",
     "7ea56e8d-5794-4708-8812-8ee9604a3a21",
     "7731d6df-9d53-4c34-9efb-98fac2fa365d",

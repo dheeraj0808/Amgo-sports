@@ -1,0 +1,102 @@
+{% layout 'theme' %}
+
+<section style="background:red; padding: 50px; text-align: center;">
+  <h1>🚀 This is the Demo Page Template</h1>
+  <p>Page rendered successfully!</p>
+  {% assign myVar =6 %}
+  {{ myVar }}
+  <br>
+  {% comment %}
+  This is a line which is going to be comment
+  {% endcomment %}
+  <br>
+  <h6> we are going to learn how the assignment operator works</h6>
+  {% assign num1 = 45 %}
+  {% assign num2 = 90 %}
+  {% assign num3 = 90 %}
+  Addition = {{ num1 | plus: num2 }}
+  <br>
+  Substraction = {{ num2 | minus: num1 }}
+  <br>
+  Multiplication = {{ num1 | times: num2 }}
+  <br>
+  Devision = {{ num2 | divided_by: num1 }}
+  <br>
+  <div <div style="background-color: lightblue; padding: 20px;">><h6> learning about how the if else operator works</h6>
+  {% if num2 > num1 %}
+    Greater number is {{ num2 }}
+  {% elsif num1 > num2 %}
+    Greater number is {{ num1 }}
+    {% else %}
+   Both  Number are equal
+    {% endif %}
+    <br>
+  How switch case works in liquid code shopify1
+  <br>
+  {% assign color = "green" %}
+  {% case color %}
+    {% when "red" %}
+     color is {{ color }}
+      
+    {% when "blue" %}
+      color is {{ color }}
+    {% when "green" %}
+      color is {{ color }}
+      
+    {% else %}
+    none of the above case
+      
+  {% endcase %}
+  <br>
+  multiple condition 
+  <br>
+  {% if num1 == num2 and num2 == num3 %}
+  All numbers are equal
+{% elsif num1 == num2 and num1 > num3 %}
+  {{ num1 }} and {{ num2 }} are equal and greatest
+{% elsif num1 == num3 and num1 > num2 %}
+  {{ num1 }} and {{ num3 }} are equal and greatest
+{% elsif num2 == num3 and num2 > num1 %}
+  {{ num2 }} and {{ num3 }} are equal and greatest
+{% else %}
+  {% if num1 > num2 and num1 > num3 %}
+    Greatest number is {{ num1 }}
+  {% elsif num2 > num1 and num2 > num3 %}
+    Greatest number is {{ num2 }}
+  {% else %}
+    Greatest number is {{ num3 }}
+  {% endif %}
+{% endif %}
+</div>
+  <br>
+  <div style="background-color: lightblue; padding: 20px;">
+      Number between 1 to 10 is <br>
+  {% for i in (1..10) %}
+  
+   {{ i }} 
+    {% endfor %}
+    <br>
+    learning about some message for different 
+  <br>
+ {% for i in (1..10) %}
+  
+   {% if forloop.first %}
+     The forloop index is first  <br>
+  {% elsif forloop.last %}
+    The forloop index is last <br>
+  {% else %}
+     The index is : {{ forloop.index }} <br>
+  {% endif %}
+    {% endfor %} 
+    <br >
+    
+    <h2>Products in Collection1</h2>
+{% for product in collections.collection1.products %}
+  {{ product.title }} <br>
+{% endfor %}
+  </div>
+    <div class="xyz">
+      
+    </div>
+</section>
+

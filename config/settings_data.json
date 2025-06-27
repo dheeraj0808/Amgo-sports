@@ -75,6 +75,13 @@
     "use_theme_currencies": true,
     "theme_currencies": "USD | EUR | GBP | VND",
     "content_for_index": [],
+    "page.dheeraj": {
+      "settings": {
+        "heading": "Welcome to Dheeraj Singh Page",
+        "description": "This is a custom section connected to page.dheeraj."
+      },
+      "blocks": {}
+    },
     "color_schemes": {
       "default": {
         "settings": {

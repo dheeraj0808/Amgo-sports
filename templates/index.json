@@ -144,14 +144,6 @@
         "custom_class": ""
       }
     },
-    "custom2_9EwHKn": {
-      "type": "custom2",
-      "name": "Custom 2",
-      "settings": {
-        "heading": "Welcome to Custom 2 Section",
-        "description": "Yeh custom2 section ka description hai."
-      }
-    },
     "collection_list_cg7ewk": {
       "type": "collection-list",
       "blocks": {
@@ -724,7 +716,6 @@
     "c72959ad-9620-4e94-ae33-1bde908e9701",
     "1621243260e1af0c20",
     "scrolling_promotion_NnJkkY",
-    "custom2_9EwHKn",
     "collection_list_cg7ewk",
     "162251092958fcda7c",
     "7ea56e8d-5794-4708-8812-8ee9604a3a21",

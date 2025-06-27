@@ -2,7 +2,7 @@
   {% if section.settings.heading != blank %}
     <h2>{{ section.settings.heading }}</h2>
   {% endif %}
-  <p>{{ section.settings.description }}</p>
+  <p>{{ section.settings.description | newline_to_br }}</p>
 </div>
 
 {% schema %}
